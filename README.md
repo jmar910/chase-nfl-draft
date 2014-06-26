@@ -1,8 +1,16 @@
 # Chase NFL Draft
 
 ## Setup
-- Clone repo
-- bundle
+- Clone the repo
+- Run
+```
+bundle install
+```
+
+You can now run the rails server by running
+```
+rails s
+```
 
 ## Load data
 You can load all the test data by running
@@ -22,7 +30,7 @@ If you run the simulate_draft task, you will not be able to pick any players sin
 You can test picking/acquiring players before you run the simulate_draft task. 
 
 ## Testing
-I used rspec for testing. You can run the test suite by running
+Rspec for testing. You can run the test suite by running
 ```
 rspec spec
 ```
