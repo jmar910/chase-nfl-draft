@@ -1,0 +1,19 @@
+<h2>Picks</h2>
+<div>
+	Round:
+	<%= link_to "All", picks_path %>
+	<% (1..7).each do |x| %>
+		<%= link_to x, picks_path(round: x) %>
+	<% end %>
+</div>
+
+<table class="table">
+	<tr>
+		<th>Round</th>
+		<th>Pick #</th>
+		<th>Team</th>
+		<th>Player</th>
+		<th>Make Pick</th>
+	</tr>
+	<%= render partial: 'pick', collection: @picks %>
+</table>

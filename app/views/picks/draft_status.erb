@@ -1,0 +1,13 @@
+<h2>Draft Status</h2>
+<table class="table">
+	<tr>
+		<th>Round</th>
+		<th>Pick</th>
+		<th>Team</th>
+		<th>Player</th>
+		<th>Make Pick</th>
+	</tr>
+	<%= render partial: 'pick', collection: @three_most_recent %>
+</table>
+
+<h3>Next team to pick: <%= next_team_pick(@next_team_pick) %></h3>

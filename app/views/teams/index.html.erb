@@ -1,0 +1,14 @@
+<h2>Teams</h2>
+
+<% @teams.each do |team| %>
+<h3><%= link_to team.name, teams_show_path(team) %></h3>
+	<table class="table">
+		<tr>
+			<th>Round</th>
+			<th>Pick</th>
+			<th>Player</th>
+			<th>Position</th>
+		</tr>
+		<%= render partial: 'team_pick', collection: team.picks, as: :pick %>
+	</table>
+<% end %>

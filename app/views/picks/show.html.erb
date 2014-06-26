@@ -1,0 +1,16 @@
+<h3>Round: <%= @pick.round %></h3>
+<h3>Pick: <%= @pick.pick_no %></h3>
+<h3>Team: <%= @pick.team.name %></h3>
+
+<% if @pick.player %>
+
+	<h3>Player: <%= @pick.player.name %> </h3>
+
+<% else %>
+
+	<%= form_tag picks_acquire_path(@pick), method: :put%>
+
+		<%= select_tag 'player_id', options_from_collection_for_select(@available_players, 'id', 'name') %>
+		<%= submit_tag 'Assign' %>
+		
+<% end %>

@@ -1,0 +1,21 @@
+<h2>Remaining Players</h2>
+<div>
+	Position:
+	<% ["QB", "C", "CB", "DE", 
+		  "DT", "FB", "FS", "ILB", 
+			"K", "LS", "OG", "OLB", 
+			"OT", "P", "RB", "SS", 
+			"TE", "WR"].each do |pos| %>
+
+			<%= link_to pos, players_path(position: pos) %>
+
+	<% end %>
+</div>
+
+<table class="table">
+	<tr>
+		<th>Player Name</th>
+		<th>Position</th>
+	</tr>
+	<%= render partial: 'player', collection: @players %>
+</table>

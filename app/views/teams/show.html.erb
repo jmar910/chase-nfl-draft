@@ -1,0 +1,10 @@
+<h3><%= @team.name %></h3>
+<table class="table">
+		<tr>
+			<th>Round</th>
+			<th>Pick</th>
+			<th>Player</th>
+			<th>Position</th>
+		</tr>
+		<%= render partial: 'team_pick', collection: @team.picks, as: :pick %>
+</table>

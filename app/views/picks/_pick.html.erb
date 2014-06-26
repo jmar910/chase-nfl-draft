@@ -1,0 +1,7 @@
+<tr>
+	<td><%= pick.round %></td>
+	<td><%= pick.pick_no %></td>
+	<td><%= link_to pick.team.name, teams_show_path(pick.team_id) %></td>
+	<td><%= player_or_choosing(pick) %></td>
+	<td><%= acquire_link(pick) %></td>
+</tr>
