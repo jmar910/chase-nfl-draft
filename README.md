@@ -8,9 +8,9 @@ Then:
 bundle install
 ```
 
-Run migrations:
+Setup DB:
 ```
-bin/rake db:migrate RAILS_ENV=development
+rake db:migrate
 ```
 
 You can now run the rails server by running:
