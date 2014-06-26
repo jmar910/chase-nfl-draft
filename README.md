@@ -10,7 +10,7 @@ bundle install
 
 Setup DB:
 ```
-rake db:migrate
+rake db:setup
 ```
 
 You can now run the rails server by running:
